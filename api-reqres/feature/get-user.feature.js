@@ -33,5 +33,18 @@ export default function (id) {
     expect(response.status, 'API status code').to.equal(404)
     expect(response).to.have.validJsonBody()
     //we can add more asertion....
+    }) &&
+    
+    describe('Get User By Id : Invalid', () => {
+    const response = user_step.getUserById(USER_DATA.invalidId)
+
+    if (response.status != 404) {
+        console.log(response.body)
+    }
+
+    //assertion for expected and actual result
+    expect(response.status, 'API status code').to.equal(404)
+    expect(response).to.have.validJsonBody()
+    //we can add more asertion....
     })
 }
