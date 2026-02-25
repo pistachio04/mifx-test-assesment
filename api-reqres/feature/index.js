@@ -1,0 +1,1 @@
+export {default as getUserById} from './get-user.feature.js'            

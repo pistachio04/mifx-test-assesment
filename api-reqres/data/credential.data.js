@@ -1,0 +1,1 @@
+  export const apiKey = 'reqres_0ed5707cf47c45bea48e40860e951ca2'
