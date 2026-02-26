@@ -22,6 +22,5 @@ cd playwright-ui-saucedemo
 npm install
 npx playwright install
 
-npx playwright test tests/LoginWithValidCredential.spec.ts --ui
-npx playwright test tests/LoginWithInvalidPassword.spec.ts --ui
+npx playwright test --ui
 ```
